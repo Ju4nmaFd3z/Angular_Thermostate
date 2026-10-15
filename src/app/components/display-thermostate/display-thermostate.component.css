@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+:host(.warning-max) {
+  background-color: #ff301e;
+}
+
+:host(.warning-min) {
+  background-color: #80d8ff;
+}

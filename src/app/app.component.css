@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+app-control-temperature {
+  background-color: #e0e0e0;
+  flex: 0 0 50%;
+}
+
+app-display-thermostate {
+  background-color: #f5f5f5;
+  flex: 1;
+}

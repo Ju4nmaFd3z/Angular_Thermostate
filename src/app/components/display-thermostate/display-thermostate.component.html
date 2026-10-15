@@ -1,0 +1,7 @@
+<h1> {{ temperature() }} ºC </h1>
+@if (alarmMax) {
+  <h1> ⚠️ Temperatura por encima del umbral máximo: {{ umbralMax() }} ºC </h1>
+}
+@if (alarmMin) {
+  <h1> ❄️ Temperatura por debajo del umbral mínimo: {{ umbralMin() }} ºC </h1>
+}

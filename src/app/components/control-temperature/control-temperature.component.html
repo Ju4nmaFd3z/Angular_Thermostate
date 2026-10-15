@@ -1,0 +1,25 @@
+<div>
+  <h2>Control de temperatura</h2>
+</div>
+<div class="controller">
+  <button (click)="onClickIncTemp()">➕</button>
+  <!-- "temperature" es un signal para leer temperatura() -->
+  <span> {{ temperature() }} ºC </span>
+  <button (click)="onClickDecTemp()">➖</button>
+</div>
+
+<div>
+  <h2>Control de umbrales</h2>
+</div>
+<h5>Umbral máximo</h5>
+<div class="controller">
+  <button (click)="onClickIncUmbralMax()">➕</button>
+  <input id="umbralMax" type="number" (input)="onInput($event)" [value]="umbralMax()">
+  <button (click)="onClickDecUmbralMax()">➖</button>
+</div>
+<h5>Umbral mínimo</h5>
+<div class="controller">
+  <button (click)="onClickIncUmbralMin()">➕</button>
+  <input id="umbralMin" type="number" (input)="onInput($event)" [value]="umbralMin()">
+  <button (click)="onClickDecUmbralMin()">➖</button>
+</div>
